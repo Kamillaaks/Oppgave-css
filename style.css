@@ -1,0 +1,86 @@
+/* Dette gjør at alt blir helt sentrert på skjermen */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #ffe5ec;
+}
+
+/* Denne sentrerer innholdet i diven som heter "container", har lagt de andre divene og
+button inni her, så er alt sentrert på skjermen */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Dette er bare stilen på selve knappen */
+.button {
+    background-color: #ffb3c1;
+    color: #a4133c;
+    border-radius: 10px;
+    border: 5px double #a4133c;
+    border-width: 4px; 
+    padding: 1rem;
+    margin: 10px;
+    font-size: large;
+    font-family: 'comic Sans MS', cursive;
+    cursor: pointer;
+    box-shadow: 6px 6px 3px #a4133c;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: #ff758f;
+}
+
+/* Dette gjør at knappen rører på seg når man trykker på den */
+.button:active {
+    box-shadow: 0 2px #fff0f3;
+    transform: translate(4px);
+}
+
+.containerTwo {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffc2d1;
+    color: #fb6f92;
+    border: 3px dotted #fb6f92;
+    border-radius: 8px;
+    width: 20rem;
+    height: 10rem;
+    margin: 10px;
+    font-family: 'comic Sans MS', cursive;
+    text-align: center;
+}
+
+.containerThree {
+    display: flex;
+    background-color: #ffb3c6;
+    color: #fb6f92;
+    border: 3px solid #fb6f92;
+    border-radius: 8px;
+    width: 20rem;
+    height: 10rem;
+    margin: 10px;
+    font-family: 'comic Sans MS', cursive;
+    align-items: center;
+    text-align: center;
+}
+
+/* Har brukt en id her, bare for å få brukt det i oppgaven */
+#title {
+    color: #800f2f;
+    font-family: 'comic Sans MS', cursive;
+}
+
+/* Hadde dette vært en større oppgave så ville jeg lagd en ordentlig
+class for denne her, men akkurat nå er jeg litt lat :( */
+h5 {
+    color: #fb6f92;
+}
+
+.picture {
+    border-radius: 50px;
+}
